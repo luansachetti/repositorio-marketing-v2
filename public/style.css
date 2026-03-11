@@ -78,3 +78,85 @@ button:hover {
   background: #efe;
   color: #0a0;
 }
+
+/* Botões de categoria */
+.btn-categoria {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn-categoria:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-categoria:active {
+  transform: translateY(0);
+}
+
+/* Botão voltar */
+#btnVoltar {
+  width: 100%;
+  margin-top: 20px;
+  background: #6c757d;
+}
+
+#btnVoltar:hover {
+  background: #5a6268;
+}
+
+/* Lista de categorias */
+#listarCategorias {
+  margin: 20px 0;
+}
+
+/* Lista de arquivos */
+.arquivo-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.arquivo-icone {
+  font-size: 24px;
+}
+
+.arquivo-nome {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-download {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#listaArquivos {
+  margin: 20px 0;
+}
