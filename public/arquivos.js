@@ -45,7 +45,9 @@ async function carregarArquivos(pastaId) {
         div.innerHTML = `
           <span class="arquivo-icone">${icone}</span>
           <span class="arquivo-nome">${arquivo.name}</span>
-          ${arquivo.webViewLink ? `<a href="${arquivo.webViewLink}" target="_blank" class="btn-download">Abrir</a>` : ''}
+          <a href="${arquivo.webViewLink || arquivo.webContentLink || '#'}" target="_blank" class="btn-download">
+            ${arquivo.mimeType === 'application/vnd.google-apps.folder' ? 'Abrir' : 'Download'}
+          </a>        
         `;
         
         listaArquivos.appendChild(div);

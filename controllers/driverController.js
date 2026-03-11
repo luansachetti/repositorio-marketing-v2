@@ -45,7 +45,7 @@ async function listarArquivos(req, res) {
 
         const response = await drive.files.list({
             q: `'${pastaId}' in parents and trashed=false`,
-            field: 'files(id, name, mimeType, webViewLink)',
+            field: 'files(id, name, mimeType, webViewLink, webContentLink)',
             orderBy: 'name'
         });
 
